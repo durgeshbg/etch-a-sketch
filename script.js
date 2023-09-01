@@ -13,3 +13,9 @@ divs.forEach((divRow) => {
     });
     board.appendChild(boardRow);
 });
+
+board.addEventListener('mouseover', (e) => {
+    if (e.target.classList.value === 'board-item') {
+        e.target.classList.add('changed');
+    }
+});

@@ -3,12 +3,12 @@
     margin: 0;
     font-family: sans-serif;
 }
-.board .board-row .board-item {
+.board-item {
     width: 20px;
     height: 20px;
-    background-color: red;
+    background-color: black;
 }
-.board .board-row {
+.board-row {
     display: flex;
     gap: 1px;
 }
@@ -16,4 +16,8 @@
     display: flex;
     flex-direction: column;
     gap: 1px;
+}
+
+.changed {
+    background-color: blue;
 }
