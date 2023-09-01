@@ -1,0 +1,19 @@
+* {
+    border: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.board .board-row .board-item {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+.board .board-row {
+    display: flex;
+    gap: 1px;
+}
+.board {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
