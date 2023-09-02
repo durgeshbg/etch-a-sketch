@@ -17,7 +17,10 @@ body {
     flex-wrap: wrap;
 }
 
-.pallete-buttons {
+button {
     margin: 10px;
     font-size: 20px;
+    background-color: bisque;
+    border-radius: 5px;
+    padding: 5px;
 }
