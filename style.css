@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: blueviolet;
+    color: rgb(41, 16, 169);
 }
 
 .header {
@@ -24,6 +24,7 @@ body {
     flex-wrap: wrap;
 }
 
+/* button styles */
 button {
     margin: 10px;
     font-size: 20px;

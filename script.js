@@ -1,5 +1,5 @@
 let color = 'black';
-let boardSize = 750
+let boardSize = 750;
 let itemSize = 30;
 let isClicked = false;
 const board = document.querySelector('.board');
@@ -12,7 +12,7 @@ function createBoard(itemSize) {
         const divItem = document.createElement('div');
         divItem.style.width = itemWidth;
         divItem.style.height = itemHeigth;
-        divItem.style.background = "white";
+        divItem.style.background = 'white';
         divItem.addEventListener('mouseover', () => {
             if (isClicked) divItem.style.background = color;
         });
@@ -39,7 +39,9 @@ function resizeBoard() {
         else if (itemSize < 10) alert('Size too small: Optimal Range 10-64');
     } while (itemSize < 10 || itemSize > 64);
     while (board.hasChildNodes()) board.removeChild(board.firstChild);
-    document.querySelector(".current-size").textContent = `Current Size: ${itemSize}x${itemSize}`
+    document.querySelector(
+        '.current-size'
+    ).textContent = `Current Size: ${itemSize}x${itemSize}`;
     createBoard(itemSize);
 }
 
