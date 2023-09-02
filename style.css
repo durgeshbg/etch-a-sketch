@@ -3,21 +3,16 @@
     margin: 0;
     font-family: sans-serif;
 }
-.board-item {
-    width: 20px;
-    height: 20px;
-    background-color: black;
-}
-.board-row {
-    display: flex;
-    gap: 1px;
-}
-.board {
+
+body {
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    align-items: center;
 }
-
-.changed {
-    background-color: blue;
+.board {
+    border: 1px black dotted;
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
 }
