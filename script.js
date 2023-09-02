@@ -1,16 +1,18 @@
 let color = 'black';
-let size = 16;
+let boardSize = 750
+let itemSize = 30;
 let isClicked = false;
 const board = document.querySelector('.board');
 
-function createBoard(size) {
-    let itemWidth = `${800 / size}px`;
-    let itemHeigth = `${800 / size}px`;
+function createBoard(itemSize) {
+    let itemWidth = `${boardSize / itemSize}px`;
+    let itemHeigth = `${boardSize / itemSize}px`;
 
-    for (let i = 0; i < size * size; i++) {
+    for (let i = 0; i < itemSize * itemSize; i++) {
         const divItem = document.createElement('div');
         divItem.style.width = itemWidth;
         divItem.style.height = itemHeigth;
+        divItem.style.background = "white";
         divItem.addEventListener('mouseover', () => {
             if (isClicked) divItem.style.background = color;
         });
@@ -32,12 +34,13 @@ function clearBoard() {
 
 function resizeBoard() {
     do {
-        size = prompt('Enter size: ');
-        if (size > 64) alert('Size too big: Optimal Range 10-64');
-        else if (size < 10) alert('Size too small: Optimal Range 10-64');
-    } while (size < 10 || size > 64);
+        itemSize = prompt('Enter Size: ');
+        if (itemSize > 64) alert('Size too big: Optimal Range 10-64');
+        else if (itemSize < 10) alert('Size too small: Optimal Range 10-64');
+    } while (itemSize < 10 || itemSize > 64);
     while (board.hasChildNodes()) board.removeChild(board.firstChild);
-    createBoard(size);
+    document.querySelector(".current-size").textContent = `Current Size: ${itemSize}x${itemSize}`
+    createBoard(itemSize);
 }
 
 document.querySelectorAll('.pallete-buttons').forEach((button) => {
@@ -50,4 +53,4 @@ window.addEventListener('keydown', (e) => {
     if (e.code == 'Space') clearBoard();
 });
 
-createBoard(size);
+createBoard(itemSize);

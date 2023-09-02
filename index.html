@@ -8,11 +8,12 @@
         <title>Etch a Sketch</title>
     </head>
     <body>
-        <h1>Sketch Pad</h1>
-        <button onclick="resizeBoard()">Resize</button>
+        <div class="header">Sketch Pad</div>
+        <div class="current-size">Current Size: 30x30</div>
         <div class="board"></div>
         <div>Press Space to clear the board.</div>
         <div class="pallete">
+            <button onclick="resizeBoard()">Resize</button>
             <button data-color="black" class="pallete-buttons">Black</button>
             <button data-color="red" class="pallete-buttons">Red</button>
             <button data-color="blue" class="pallete-buttons">Blue</button>
