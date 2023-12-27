@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="./script.js" defer></script>
-        <link rel="stylesheet" href="style.css" />
-        <title>Etch a Sketch</title>
-    </head>
-    <body>
-        <div class="header">Sketch Pad</div>
-        <div class="current-size">Current Size: 30x30</div>
-        <div class="board"></div>
-        <div>Press Space to clear the board.</div>
-        <div class="pallete">
-            <button onclick="resizeBoard()">Resize</button>
-            <button data-color="black" class="pallete-buttons">Black</button>
-            <button data-color="red" class="pallete-buttons">Red</button>
-            <button data-color="blue" class="pallete-buttons">Blue</button>
-            <button data-color="green" class="pallete-buttons">Green</button>
-            <button>
-                <a href="https://github.com/durgeshbg/etch-a-sketch">Code</a>
-            </button>
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Etch a Sketch</title>
+  </head>
+  <body>
+    <div class="header">Sketch Pad</div>
+    <div class="current-size">Current Size: 30x30</div>
+    <div class="board"></div>
+    <div>Press Space to clear the board.</div>
+    <div class="pallete">
+      <button onclick="resizeBoard()">Resize</button>
+      <button data-color="black" class="pallete-buttons">Black</button>
+      <button data-color="red" class="pallete-buttons">Red</button>
+      <button data-color="blue" class="pallete-buttons">Blue</button>
+      <button data-color="green" class="pallete-buttons">Green</button>
+    </div>
+    <div class="footer">
+      <div>Copyright &copy; 2023</div>
+      <a href="https://github.com/durgeshbg" target="_blank"
+        >durgeshbg
+        <img src="./assets/images/gh-logo.svg" />
+      </a>
+    </div>
+  </body>
 </html>
