@@ -5,11 +5,10 @@
 }
 
 body {
-    background-color: rgb(191, 186, 186);
+    background-color: rgb(71, 71, 71);
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: rgb(41, 16, 169);
 }
 
 .header {
@@ -46,4 +45,24 @@ button a:visited {
 }
 button a:hover {
     color: sandybrown;
+}
+
+.footer {
+    color: #fff;
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footer a {
+    display: flex;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+}
+.footer img {
+    width: 20px;
 }
