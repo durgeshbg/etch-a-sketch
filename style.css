@@ -1,68 +1,42 @@
 * {
-    border: 0;
-    margin: 0;
-    font-family: sans-serif;
+  border: 0;
+  margin: 0;
+  font-family: sans-serif;
 }
 
 body {
-    background-color: rgb(71, 71, 71);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100dvh;
 }
 
 .header {
-    font-size: 65px;
-    font-weight: bold;
+  font-size: 65px;
+  font-weight: bold;
 }
 .board {
-    border: 1px black dotted;
-    width: 750px;
-    height: 750px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* button styles */
-button {
-    margin: 10px;
-    font-size: 20px;
-    background-color: sandybrown;
-    border-radius: 5px;
-    padding: 5px;
-}
-button:hover {
-    background-color: black;
-    color: sandybrown;
-}
-
-button a {
-    text-decoration: none;
-    color: black;
-}
-button a:visited {
-    color: black;
-}
-button a:hover {
-    color: sandybrown;
+  border: 1px black dotted;
+  width: 750px;
+  height: 750px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer {
-    color: #fff;
-    background-color: black;
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  color: #fff;
+  background-color: black;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-end;
 }
 .footer a {
-    display: flex;
-    gap: 10px;
-    color: white;
-    text-decoration: none;
-}
-.footer img {
-    width: 20px;
+  display: flex;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
 }
